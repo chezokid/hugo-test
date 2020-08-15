@@ -1,0 +1,4 @@
+# exclude JS
+node_modules
+# exclude hugo public
+public

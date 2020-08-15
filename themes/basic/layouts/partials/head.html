@@ -1,0 +1,7 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" conent="width=device-width, initial-scale=1">
+    <title>{{ .Site.Title }}</title>
+    {{ $css := resources.Get "css/style.css" | minify | fingerprint}}
+    <link rel="stylesheet" href="{{ $css.RelPermalink }}">
+</head>
